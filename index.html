@@ -15,15 +15,18 @@
       padding: 50px;
       overflow: hidden;
       position: relative;
-    }.card {
-  background: rgba(0,0,0,0.4);
-  padding: 30px;
+    }
+    
+  .card {
+  width: 95vw;        /* makes it wide on phone */
+  max-width: 600px;   /* keeps it neat on laptop */
+  margin: 10px auto;
+  padding: 20px;
   border-radius: 20px;
-  max-width: 500px;
-  margin: auto;
-  box-shadow: 0 10px 50px rgba(0,0,0,0.6);
-  backdrop-filter: blur(8px);
-  animation: pulse 2s infinite;
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.7);
 }
 
 @keyframes pulse {
@@ -157,7 +160,7 @@ button:hover {
     music.volume = 0.7;
     music.play().catch(() => console.log('Autoplay blocked'));
 
-    const text = 'Hey Azaryne 🎉\n\nYour birthday makes everything\n\nfeel more alive. Enjoy every\n\nsecond of Today?, you deserve it.\n\nYou will always always be my crush ❤️\n\n';
+    const text = 'Hey Azaryne 🎉Your birthday makes everything\n\n feel more alive. Enjoy every second\n\nof today? you truely deserve it.\n\n You will always be special to me❤️';
 
     let i = 0;
     function typeEffect() {
